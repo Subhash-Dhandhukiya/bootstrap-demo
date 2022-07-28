@@ -2,3 +2,12 @@
     margin: 0;
     padding: 0;
 }
+
+.color-primary {
+    background-color: #35b8be;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+}
