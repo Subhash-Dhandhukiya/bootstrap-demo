@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
@@ -9,39 +9,17 @@ import FAQ from "./pages/FAQ";
 import Order from "./pages/Order";
 
 const App = () => {
-  //   let component;
-
-  //   switch (window?.location?.pathname) {
-  //     case "/":
-  //       component = <Home />;
-  //       break;
-  //     case "/company":
-  //       component = <Company />;
-  //       break;
-  //     case "/contact":
-  //       component = <Contact />;
-  //       break;
-  //     case "/faq":
-  //       component = <FAQ />;
-  //       break;
-  //     case "/order":
-  //       component = <Order />;
-  //       break;
-  //   }
-
   return (
-    <>
+    <div>
       <Navbar />
-      <BrowserRouter>
-        <Routes>
-          <Route to="/" element={<Home />} />
-          <Route to="/company" element={<Company />} />
-          <Route to="/contact" element={<Contact />} />
-          <Route to="/faq" element={<FAQ />} />
-          <Route to="/order" element={<Order />} />
-        </Routes>
-      </BrowserRouter>
-    </>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/company" element={<Company />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/order" element={<Order />} />
+      </Routes>
+    </div>
   );
 };
 

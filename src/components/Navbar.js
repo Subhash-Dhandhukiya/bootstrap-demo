@@ -2,19 +2,20 @@ import React from "react";
 import Logo from "../assets/Logo.svg";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
-const CustomLink = ({ href, children, ...props }) => {
-  const path = window.location.pathname;
-  // const resolvedPath = useResolvedPath(href);
-  // const isActive = useMatch({path:resolvedPath.pathname , end:true})
+const CustomLink = ({ to, children, ...props }) => {
+  let resolved = useResolvedPath(to);
+  let match = useMatch({ path: resolved.pathname, end: true });
+
+  console.log("");
   return (
     <li class="nav-item px-2">
-      <a
+      <Link
         {...props}
-        class={path === href ? "nav-link active-color" : "nav-link"}
-        href={href}
+        class={match ? "nav-link active-color" : "nav-link"}
+        to={to}
       >
         {children}
-      </a>
+      </Link>
     </li>
   );
 };
@@ -30,9 +31,9 @@ const Navbar = () => {
 
       <nav className="navbar navbar-expand-sm bg-white container">
         <div className="container-fluid">
-          <a href="#" className="navbar-brand">
+          <Link to="/" className="navbar-brand">
             <img src={Logo} alt="logo" className="img-fluid logo" />
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -44,11 +45,11 @@ const Navbar = () => {
         </div>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav">
-            <CustomLink href="/">Home</CustomLink>
-            <CustomLink href="/order">Order</CustomLink>
-            <CustomLink href="/company">Company</CustomLink>
-            <CustomLink href="/faq">FAQ</CustomLink>
-            <CustomLink href="contact">Contact</CustomLink>
+            <CustomLink to="/">Home</CustomLink>
+            <CustomLink to="/order">Order</CustomLink>
+            <CustomLink to="/company">Company</CustomLink>
+            <CustomLink to="/faq">FAQ</CustomLink>
+            <CustomLink to="contact">Contact</CustomLink>
           </ul>
         </div>
       </nav>
