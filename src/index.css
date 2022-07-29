@@ -44,3 +44,9 @@
     margin-top: 10rem;
     margin-bottom: 10rem;
 }
+
+.center-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
