@@ -146,6 +146,53 @@ const Home = () => {
           <div className="col-sm-12 col-md-12 col-lg-6">
             <FoodCard />
           </div>
+          <div className="col-sm-12 col-md-12 col-lg-6">
+            <FoodCard />
+          </div>
+          <div className="col-sm-12 col-md-12 col-lg-6">
+            <FoodCard />
+          </div>
+        </div>
+
+        <div className="text-center py-5 ">
+          <CustomButton
+            title="See Fill Menu"
+            onClick={() => alert("Coming soon..")}
+          />
+        </div>
+      </div>
+
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6 p-5">
+            <img
+              src={images.img5}
+              alt="side_image"
+              class="img-fluid image-container"
+            />
+          </div>
+          <div className="col-md-6 p-5">
+            <div className="mt-5">
+              <h1
+                className="display-4 active-color"
+                style={{ fontWeight: "bolder" }}
+              >
+                Order online with our simple checkout.
+              </h1>
+              <p className="mt-4 light-gray description">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500.
+              </p>
+            </div>
+
+            <div className="mt-5">
+              <CustomButton
+                title={"See our FAQ"}
+                onClick={() => alert("Coming soon...")}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </>
