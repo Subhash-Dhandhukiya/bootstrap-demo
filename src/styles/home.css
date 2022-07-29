@@ -1,0 +1,16 @@
+.description {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.logo-image {
+    height: 30px;
+    align-self: flex-start;
+}
+
+.image-container {
+    height: 500px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+}
