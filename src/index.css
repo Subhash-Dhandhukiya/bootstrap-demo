@@ -22,7 +22,6 @@
 
 .background-color {
     background-color: #f6fbfc;
-    height: 80vh;
 }
 
 .button {
@@ -33,4 +32,15 @@
     border-radius: 5px;
     border: none;
     font-size: 1.2em;
+}
+
+.circle_img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+.my-10 {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
 }
