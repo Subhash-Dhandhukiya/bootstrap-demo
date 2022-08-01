@@ -50,3 +50,7 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.h-500 {
+    height: 500px;
+}
