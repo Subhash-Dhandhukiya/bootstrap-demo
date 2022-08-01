@@ -77,7 +77,7 @@ const Home = () => {
             <div className="mt-5">
               <CustomButton
                 title={"Learn about  us"}
-                onClick={() => alert("Coming soon...")}
+                onClick={() => navigate("/company")}
               />
             </div>
           </div>
@@ -193,7 +193,7 @@ const Home = () => {
             <div className="mt-5">
               <CustomButton
                 title={"See our FAQ"}
-                onClick={() => alert("Coming soon...")}
+                onClick={() => navigate("/faq")}
               />
             </div>
           </div>
@@ -218,7 +218,7 @@ const Home = () => {
             <div className="mt-5">
               <CustomButton
                 title={"Ph. +61 233 2333"}
-                onClick={() => alert("Coming soon...")}
+                onClick={() => navigate("/contact")}
               />
             </div>
           </div>
