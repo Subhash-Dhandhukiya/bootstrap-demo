@@ -9,7 +9,7 @@ const Order = () => {
       <div className="d-flex align-items-center justify-content-center container-fluid background-color h-500 text-center">
         <h2
           style={{ fontWeight: "bolder", width: "50%" }}
-          className="display-3 text-dark "
+          className="display-3 text-black "
         >
           Get your food <span className="active-color">delivered</span> or{" "}
           <span className="active-color">pick-up</span> in store.
